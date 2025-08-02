@@ -1,7 +1,7 @@
 if SHIELD_LALAPADMINI_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Lalapadmini"
+    default "Lalapadmini_right"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
