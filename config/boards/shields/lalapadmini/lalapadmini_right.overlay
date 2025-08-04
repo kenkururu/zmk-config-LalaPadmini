@@ -1,9 +1,5 @@
 #include "lalapadmini.dtsi"
 
-&default_transform {
-    col-offset = <5>;
-};
-
 &kscan0 {
     col-gpios
         = <&xiao_d 4 GPIO_ACTIVE_HIGH>
@@ -21,10 +17,11 @@
     status = "okay";
 };
 
-&glidepoint_listener_R {
+&glidepoint_split_R {
     status = "okay";
     device = <&glidepoint>;
 };
-&glidepoint_listener_L {
-    status = "okay";
+&glidepoint_split_L {
+    status = "disabled";
+    device = <&glidepoint>;
 };
