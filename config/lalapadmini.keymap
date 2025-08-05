@@ -64,14 +64,101 @@
     };
 };
 
+&mt { quick-tap-ms = <200>; };
+
+&lt { quick-tap-ms = <200>; };
+
 / {
     behaviors {
         // Encoder to Mouse Scroll
+
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_down_up: behavior_sensor_rotate_mouse_wheel_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
+        };
+
+        scroll_right_left: behavior_sensor_rotate_mouse_wheel_right_left {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
+
+        volume_up_down: behavior_sensor_rotate_volume_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+
+            tap-ms = <20>;
+        };
+
+        mt2: mod_tap2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        tap_dance_layer_1and2: tap_dance_layer_1and2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_mo12";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 2>;
+        };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
 
-    keymap {
+        CONBO_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        COMBO_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        COMBO_WIN {
+            bindings = <&kp LWIN>;
+            key-positions = <30 31>;
+        };
+    };
+
+    macros {
+        MACRO_LTAP: MACRO_LTAP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>;
+            label = "MACRO_LTAP";
+        };
+    };
+
+keymap {
         compatible = "zmk,keymap";
 
         DEFAULT_LAYER {
