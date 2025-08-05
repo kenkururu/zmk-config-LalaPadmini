@@ -1,6 +1,6 @@
 include:
-  - board: seeeduino_xiao_ble
-    shield: lalapadmini
-    snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+ - board: seeeduino_xiao_ble
+   shield: lalapadmini
+   snippet: studio-rpc-usb-uart
+ - board: seeeduino_xiao_ble
+   shield: settings_reset
