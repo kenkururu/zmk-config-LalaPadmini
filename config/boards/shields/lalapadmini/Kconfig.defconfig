@@ -1,4 +1,4 @@
-if SHIELD_LALAPADMINI_LEFT
+if SHIELD_LALAPADMINI
 
 config ZMK_KEYBOARD_NAME
     default "Lalapadmini"
