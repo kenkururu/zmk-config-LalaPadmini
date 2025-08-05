@@ -51,8 +51,8 @@
     // Input Listners
     glidepoint_listener_L: glidepoint_listener_L {
         compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&glidepoint_split_L>;
+        status = "okay";
+        device = <&glidepoint>;
     };
 };
 
