@@ -23,4 +23,5 @@
 
 &glidepoint_listener_L {
     status = "okay";
+    device = <&glidepoint>;
 };
