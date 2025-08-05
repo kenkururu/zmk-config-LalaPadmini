@@ -20,6 +20,7 @@
     steps = <24>;
     status = "okay";
 };
+
 // SPI
 &qspi {
 	status = "disabled";
