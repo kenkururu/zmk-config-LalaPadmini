@@ -49,10 +49,6 @@
     };
 
     // Input Listners
-    glidepoint_listener_R: glidepoint_listener_R {
-        compatible = "zmk,input-listener";
-        status = "okay";
-    };
     glidepoint_listener_L: glidepoint_listener_L {
         compatible = "zmk,input-listener";
         status = "okay";
