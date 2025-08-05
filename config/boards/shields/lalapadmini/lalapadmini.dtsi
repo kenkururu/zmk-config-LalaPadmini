@@ -84,21 +84,3 @@
 &qspi {
 	status = "disabled";
 };
-&xiao_spi {
-    status = "okay";
-    cs-gpios = <&gpio1 10 (GPIO_ACTIVE_LOW )>, <&gpio0 13 (GPIO_PULL_UP)>;//dummy
-
-    glidepoint: glidepoint@0 {
-        compatible = "cirque,pinnacle";
-        status = "okay";
-        reg = <0>;
-        spi-max-frequency = <1000000>;
-        dr-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "2x";
-        no-taps;
-        no-smoothing;
-    };
-};
-
-
