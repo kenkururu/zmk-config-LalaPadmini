@@ -33,7 +33,7 @@
             ;
     };
 
-    // Encoders
+// Encoders
     left_encoder: left_encoder {
         compatible = "alps,ec11";
         status = "disabled";
@@ -47,5 +47,4 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
-
 };
