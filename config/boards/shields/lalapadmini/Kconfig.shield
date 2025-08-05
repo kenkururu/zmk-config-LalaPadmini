@@ -1,2 +1,2 @@
-config SHIELD_LALAPADMINI
-    def_bool $(shields_list_contains,lalapadmini)
+config SHIELD_LALAPADMINI_LEFT
+    def_bool $(shields_list_contains,lalapadmini_left)
