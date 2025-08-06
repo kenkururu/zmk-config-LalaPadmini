@@ -95,6 +95,15 @@
 &trans  &trans          &trans  &trans
             >;
         };
+
+        layer_2 {
+            bindings = <
+&kp P       &kp Q             &kp COMMA  &kp F   &kp A
+&kp PERIOD  &kp L             &kp D      &kp J   &kp G
+&kp Z       &kp X             &kp V      &kp C   &kp B
+&kp DELETE  &kp LEFT_CONTROL             &trans  &kp LEFT_SHIFT
+            >;
+        };
     };
 
     conditional_layers {
