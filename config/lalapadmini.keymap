@@ -121,7 +121,7 @@
             display-name = "Default";
             bindings = <
 &kp W            &kp S             &kp U  &kp R        &kp T
-&kp E            &kp I             &kp A  &kp O        &kp K
+&lt 4 E          &kp I             &kp A  &kp O        &kp K
 &kp Y            &kp MINUS         &kp M  &kp N        &kp H
 &lt 4 BACKSPACE  &kp LEFT_CONTROL         &lt 2 ENTER  &lt 3 SPACE
             >;
