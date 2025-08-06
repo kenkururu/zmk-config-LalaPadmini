@@ -80,10 +80,10 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q  &kp C  &kp E  &kp R  &kp T
-&kp A  &kp S  &kp D  &kp F  &kp G
-&kp B  &kp X  &kp C  &kp V  &kp B
-&kp D  &kp E         &kp C  &kp M
+&kp W          &kp S             &kp U  &kp R      &kp T
+&kp E          &kp I             &kp A  &kp O      &kp K
+&kp Y          &kp MINUS         &kp M  &kp N      &kp H
+&kp BACKSPACE  &kp LEFT_CONTROL         &kp ENTER  &kp SPACE
             >;
         };
 
