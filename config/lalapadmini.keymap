@@ -61,6 +61,17 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 32>;
     };
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <400>;
+        excluded-positions = <
+            15 //
+            16 //
+            8 //
+            7 //
+        >;
+    };
 };
 
 &mt { quick-tap-ms = <200>; };
@@ -97,7 +108,7 @@
 
         COMBO_WIN {
             bindings = <&kp LWIN>;
-            key-positions = <30 31 15 16>;
+            key-positions = <15 16>;
         };
     };
 
