@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
-//#define SECONDARY_LAYER 1
 
+//#define SECONDARY_LAYER 1
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_DQUOTE       AT                // "
@@ -85,6 +85,7 @@
             bindings = <&mo 1>, <&mo 2>;
         };
     };
+
     combos {
         compatible = "zmk,combos";
 
@@ -119,10 +120,10 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp W          &kp S             &kp U  &kp R      &kp T
-&kp E          &kp I             &kp A  &kp O      &kp K
-&kp Y          &kp MINUS         &kp M  &kp N      &kp H
-&kp BACKSPACE  &kp LEFT_CONTROL         &kp ENTER  &kp SPACE
+&kp W            &kp S             &kp U  &kp R        &kp T
+&kp E            &kp I             &kp A  &kp O        &kp K
+&kp Y            &kp MINUS         &kp M  &kp N        &kp H
+&lt 4 BACKSPACE  &kp LEFT_CONTROL         &lt 2 ENTER  &lt 3 SPACE
             >;
         };
 
@@ -146,10 +147,10 @@
 
         layer_3 {
             bindings = <
-&kp MINUS  &kp N7        &kp N8        &kp N9        &kp JP_EQUAL
-&kp JP_PLUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
-&kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_ASTERISK
-&kp N0     &kp PERIOD                  &trans        &trans
+&kp MINUS    &kp N7        &kp N8        &kp N9        &kp JP_EQUAL
+&kp JP_PLUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
+&kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_ASTERISK
+&kp N0       &kp PERIOD                  &trans        &trans
             >;
         };
 
@@ -159,6 +160,15 @@
 &kp LEFT_ALT    &kp F4  &kp F5  &kp F6  &kp F11
 &kp RCTRL       &kp F1  &kp F2  &kp F3  &kp F10
 &trans          &trans          &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans
             >;
         };
     };
