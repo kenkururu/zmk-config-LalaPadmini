@@ -67,6 +67,24 @@
 &lt { quick-tap-ms = <200>; };
 
 / {
+    behaviors {
+        mt2: mod_tap2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        tap_dance_layer_1and2: tap_dance_layer_1and2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_mo12";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 2>;
+        };
+    };
     combos {
         compatible = "zmk,combos";
 
