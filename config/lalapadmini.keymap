@@ -45,12 +45,12 @@
         <&zip_xy_scaler 3 2>,
         <&zip_temp_layer 1 100>;
 
-    lowspeedmode {
-        layers = <2>;
+    highspeedmode {
+        layers = <7>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_scaler 3 4>,
-            <&zip_temp_layer 2 300>;
+            <&zip_xy_scaler 3 1>,
+            <&zip_temp_layer 1 300>;
     };
 
     scroller {
