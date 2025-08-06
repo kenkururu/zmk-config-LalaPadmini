@@ -120,10 +120,10 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp W            &kp S             &kp U  &kp R        &kp T
-&lt 4 E          &kp I             &kp A  &kp O        &kp K
-&kp Y            &kp MINUS         &kp M  &kp N        &kp H
-&lt 4 BACKSPACE  &kp LEFT_CONTROL         &lt 2 ENTER  &lt 3 SPACE
+&kp W            &kp S                   &kp U  &kp R        &kp T
+&lt 7 E          &kp I                   &kp A  &kp O        &kp K
+&kp Y            &mt LEFT_CONTROL MINUS  &kp M  &kp N        &kp H
+&lt 4 BACKSPACE  &lt 7 DELETE                   &lt 2 ENTER  &lt 3 SPACE
             >;
         };
 
@@ -164,6 +164,24 @@
         };
 
         layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans
+            >;
+        };
+
+        layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans
