@@ -64,7 +64,7 @@
 
      disable-scroll-x {
          layers = <7>; //スクロールレイヤー
-            input-processors = <<&zip_x_scaler 0 1>;
+            input-processors = <&zip_x_scaler 0 1>;
      };
     /omit-if-no-ref/
 
