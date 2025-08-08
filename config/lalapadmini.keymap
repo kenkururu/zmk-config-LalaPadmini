@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 1 380>; };
 
@@ -59,7 +58,8 @@
     scroller {
         layers = <7>;
         input-processors =
-            <&zip_x_scaler 0 0>,
+            layers = <7>; //スクロールレイヤー
+            <&zip_x_scaler 0 1>,
             <&zip_xy_to_scroll_mapper>,      
             <&zip_scroll_scaler 1 35>;
     };
