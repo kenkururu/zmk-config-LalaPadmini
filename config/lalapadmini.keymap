@@ -62,24 +62,7 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 35>;
     };
-/{
-    input_processors {
-        wheel_x_scaler: wheel_x_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
-        compatible = "zmk,input-listener";
-        device = <&glidepoint>;
 
-        disable-scroll-x {
-            layers = <7>; //スクロールレイヤー
-            input-processors = <&wheel_x_scaler 0 1>;
-        };
-};
     /omit-if-no-ref/
 
     zip_temp_layer: zip_temp_layer {
