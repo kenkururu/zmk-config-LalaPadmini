@@ -130,10 +130,10 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp W            &kp S                 &kp U  &kp R        &kp T
-&lt 7 E          &lt 8 I               &kp A  &kp O        &kp K
-&kp Y            &mt LEFT_SHIFT MINUS  &kp M  &kp N        &kp H
-&lt 4 BACKSPACE  &lt 7 ESC                    &lt 2 SPACE  &lt 3 ENTER
+&kp W            &kp S             &kp U  &kp R        &kp T
+&lt 7 E          &lt 8 I           &kp A  &kp O        &kp K
+&kp Y            &mt LEFT_SHIFT H  &kp M  &kp N        &lt 4 SPACE
+&lt 7 BACKSPACE  &lt 7 MINUS              &lt 2 ENTER  &lt 3 BACKSPACE
             >;
         };
 
@@ -166,10 +166,10 @@
 
         layer_4 {
             bindings = <
-&kp LEFT_SHIFT  &kp F7  &kp F8  &kp F9  &kp F12
-&kp LEFT_ALT    &kp F4  &kp F5  &kp F6  &kp F11
-&kp RCTRL       &kp F1  &kp F2  &kp F3  &kp F10
-&trans          &trans          &trans  &trans
+&kp LEFT_SHIFT  &kp F7  &kp F8  &kp F9   &kp F12
+&kp LEFT_ALT    &kp F4  &kp F5  &kp F6   &kp F11
+&kp RCTRL       &kp F1  &kp F2  &kp F3   &trans
+&trans          &trans          &kp F10  &trans
             >;
         };
 
