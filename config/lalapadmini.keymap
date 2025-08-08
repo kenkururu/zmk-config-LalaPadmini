@@ -102,7 +102,6 @@
     flavor = "balanced";
 };
 
-/ {
     behaviors {
         mt2: mod_tap2 {
             compatible = "zmk,behavior-hold-tap";
@@ -230,5 +229,4 @@
             >;
         };
     };
-};
 };
