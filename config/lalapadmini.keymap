@@ -131,27 +131,27 @@
             display-name = "Default";
             bindings = <
 &kp W            &kp S             &kp U  &kp R        &kp T
-&lt 7 E          &lt 8 I           &kp A  &kp O        &kp K
+&lt 7 E          &kp I             &kp A  &kp O        &kp K
 &kp Y            &mt LEFT_SHIFT H  &kp M  &kp N        &lt 4 SPACE
-&lt 7 LS(SLASH)  &lt 7 MINUS              &lt 2 ENTER  &lt 3 BACKSPACE
+&lt 7 LS(SLASH)  &lt 8 MINUS              &lt 2 ENTER  &lt 3 BACKSPACE
             >;
         };
 
         layer_1 {
             bindings = <
-&trans    &trans    &trans    &trans    &trans
-&trans    &trans    &mkp MB2  &mkp MB1  &trans
-&trans    &trans    &trans    &trans    &trans
-&mkp MB2  &mkp MB1            &trans    &trans
+&trans    &trans    &trans  &trans  &trans
+&trans    &trans    &trans  &trans  &trans
+&trans    &trans    &trans  &trans  &trans
+&mkp MB2  &mkp MB1          &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp P       &kp Q           &kp COMMA  &kp F   &kp JP_AT
-&kp PERIOD  &kp L           &kp D      &kp J   &kp G
-&kp Z       &kp X           &kp C      &kp V   &kp B
-&kp DELETE  &kp LEFT_SHIFT             &trans  &kp RCTRL
+&kp P       &kp Q                  &kp COMMA  &kp F   &kp JP_AT
+&kp PERIOD  &kp L                  &kp D      &kp J   &kp G
+&kp Z       &kp X                  &kp C      &kp V   &kp B
+&kp DELETE  &mt LEFT_SHIFT DELETE             &trans  &kp RCTRL
             >;
         };
 
