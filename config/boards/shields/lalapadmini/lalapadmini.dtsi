@@ -53,7 +53,7 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
-　　};
+    };
 };
 
 // SPI
