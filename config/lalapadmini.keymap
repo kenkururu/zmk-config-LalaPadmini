@@ -62,7 +62,7 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 35>;
     };
-wheel_x_scaler: wheel_x_scaler {
+    wheel_x_scaler: wheel_x_scaler {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
