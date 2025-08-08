@@ -90,7 +90,8 @@
             codes = <INPUT_REL_HWHEEL>;
             track-remainders;
         };
-    };o
+    };
+
 &mt {
     quick-tap-ms = <300>;
     flavor = "balanced";
