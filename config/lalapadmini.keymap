@@ -58,12 +58,14 @@
     scroller {
         layers = <7>;
         input-processors =
-            layers = <7>; //スクロールレイヤー
-            <&zip_x_scaler 0 1>,
             <&zip_xy_to_scroll_mapper>,      
             <&zip_scroll_scaler 1 35>;
     };
 
+     disable-scroll-x {
+         layers = <7>; //スクロールレイヤー
+            input-processors = <<&zip_x_scaler 0 1>;
+     };
     /omit-if-no-ref/
 
     zip_temp_layer: zip_temp_layer {
