@@ -36,6 +36,16 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define JP_DOLLAR       DOLLAR             // $
 
+&mt {
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+};
+
+&lt {
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+};
+
 // Mouse Scroll Value
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
@@ -91,16 +101,6 @@
             track-remainders;
         };
     };
-
-&mt {
-    quick-tap-ms = <300>;
-    flavor = "balanced";
-};
-
-&lt {
-    quick-tap-ms = <300>;
-    flavor = "balanced";
-};
 
     behaviors {
         mt2: mod_tap2 {
