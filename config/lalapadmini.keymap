@@ -133,7 +133,7 @@
 &kp W            &kp S             &kp U  &kp R        &kp T
 &lt 7 E          &lt 8 I           &kp A  &kp O        &kp K
 &kp Y            &mt LEFT_SHIFT H  &kp M  &kp N        &lt 4 SPACE
-&lt 7 BACKSPACE  &lt 7 MINUS              &lt 2 ENTER  &lt 3 BACKSPACE
+&lt 7 LS(SLASH)  &lt 7 MINUS              &lt 2 ENTER  &lt 3 BACKSPACE
             >;
         };
 
