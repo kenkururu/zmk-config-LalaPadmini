@@ -151,7 +151,7 @@
 &kp P       &kp Q                  &kp COMMA  &kp F   &kp JP_AT
 &kp PERIOD  &kp L                  &kp D      &kp J   &kp G
 &kp Z       &kp X                  &kp C      &kp V   &kp B
-&kp DELETE  &mt LEFT_SHIFT DELETE             &trans  &kp RCTRL
+&kp LS(NUMBER_1)  &mt LEFT_SHIFT DELETE             &trans  &kp RCTRL
             >;
         };
 
