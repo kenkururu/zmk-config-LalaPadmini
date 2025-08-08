@@ -75,9 +75,15 @@
     };
 };
 
-&mt { quick-tap-ms = <200>; };
+&mt {
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+};
 
-&lt { quick-tap-ms = <200>; };
+&lt {
+    quick-tap-ms = <300>;
+    flavor = "balanced";
+};
 
 / {
     behaviors {
