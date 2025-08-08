@@ -53,11 +53,6 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
-
-        disable-scroll-x {
-            layers = <7>; //スクロールレイヤー
-            input-processors = <&wheel_x_scaler 0 1>;
-        };
 　　};
 };
 
