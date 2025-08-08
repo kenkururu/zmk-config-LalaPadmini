@@ -148,9 +148,9 @@
 
         layer_2 {
             bindings = <
-&kp P       &kp Q                  &kp COMMA  &kp F   &kp JP_AT
-&kp PERIOD  &kp L                  &kp D      &kp J   &kp G
-&kp Z       &kp X                  &kp C      &kp V   &kp B
+&kp P             &kp Q                  &kp COMMA  &kp F   &kp JP_AT
+&kp PERIOD        &kp L                  &kp D      &kp J   &kp G
+&kp Z             &kp X                  &kp C      &kp V   &kp B
 &kp LS(NUMBER_1)  &mt LEFT_SHIFT DELETE             &trans  &kp RCTRL
             >;
         };
@@ -202,10 +202,10 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans    &trans    &trans
-&trans  &trans  &mkp MB2  &mkp MB1  &trans
-&trans  &trans  &trans    &trans    &trans
-&trans  &trans            &trans    &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans
             >;
         };
     };
