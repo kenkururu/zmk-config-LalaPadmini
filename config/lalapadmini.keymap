@@ -65,13 +65,12 @@
             <&zip_xy_scaler 1 2>,
             <&zip_temp_layer 1 300>;
 
-highspeedmode {
+     highspeedmode {
         layers = <6>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 2 1>,
             <&zip_temp_layer 1 300>;
-    };
 
     scroller {
         layers = <7>;
@@ -92,7 +91,8 @@ highspeedmode {
         >;
     };
 };
-
+};
+};
 / {
     behaviors {
         mt2: mod_tap2 {
