@@ -73,8 +73,23 @@
             16 //
         >;
     };
-};
 
+    disable-scroll-x {
+        layers = <7>;
+        input-processors = <&wheel_x_scaler 0 1>;
+        process-next;
+    };
+};
+/ {
+    input_processors {
+        wheel_x_scaler: wheel_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+            track-remainders;
+        };
+    };o
 &mt {
     quick-tap-ms = <300>;
     flavor = "balanced";
@@ -213,4 +228,5 @@
             >;
         };
     };
+};
 };
