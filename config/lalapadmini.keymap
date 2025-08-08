@@ -60,7 +60,7 @@
         layers = <7>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,      
-            <&zip_scroll_scaler 0 35>;
+            <&zip_scroll_scaler 1 35>;
     };
 
     /omit-if-no-ref/
