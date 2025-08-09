@@ -133,7 +133,7 @@
         compatible = "zmk,combos";
 
         COMBO_TAB {
-            bindings = <&to 9>;
+            bindings = <&tog 9>;
             key-positions = <1 0>;
             layers = <0>;
         };
@@ -144,19 +144,19 @@
         };
 
         mo10 {
-            bindings = <&to 9>;
+            bindings = <&tog 9>;
             key-positions = <0 1>;
             layers = <9>;
         };
 
         to10 {
-            bindings = <&to 10>;
+            bindings = <&tog 10>;
             key-positions = <2 3>;
             layers = <0>;
         };
 
         toto10 {
-            bindings = <&to 10>;
+            bindings = <&tog 10>;
             key-positions = <2 3>;
             layers = <10>;
         };
