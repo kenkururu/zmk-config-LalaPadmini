@@ -78,19 +78,22 @@
         layers = <7>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 41>;
+            <&zip_scroll_scaler 1 30>;
     };
 
     handscroller {
         layers = <9>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 60>;
+            <&zip_scroll_scaler 1 25>;
     };
 
     handpointer {
         layers = <10>;
-        input-processors = <&zip_xy_scaler 3 2>, <&zip_temp_layer 1 300>;
+        input-processors =
+           <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>,
+           <&zip_xy_scaler 3 2>,
+           <&zip_temp_layer 1 300>;
     };
 
     /omit-if-no-ref/
