@@ -90,9 +90,7 @@
 
     handpointer {
         layers = <10>;
-        input-processors =
-            <&zip_xy_scaler 3 2>,
-            <&zip_temp_layer 1 300>;
+        input-processors = <&zip_xy_scaler 3 2>, <&zip_temp_layer 1 300>;
     };
 
     /omit-if-no-ref/
@@ -132,13 +130,18 @@
         compatible = "zmk,combos";
 
         COMBO_TAB {
-            bindings = <&kp TAB>;
-            key-positions = <7 8>;
+            bindings = <&mo 9>;
+            key-positions = <1 0>;
         };
 
         COMBO_WIN {
             bindings = <&mo 6>;
             key-positions = <15 16>;
+        };
+
+        mo10 {
+            bindings = <&mo 10>;
+            key-positions = <2 3>;
         };
     };
 
@@ -228,6 +231,24 @@
         };
 
         layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans
+            >;
+        };
+
+        layer_10 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans
