@@ -258,10 +258,10 @@
 
         layer_9 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans
+&trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans    &trans  &trans
+&trans  &trans  &mkp MB2  &trans  &trans
+&trans  &trans            &trans  &trans
             >;
         };
 
