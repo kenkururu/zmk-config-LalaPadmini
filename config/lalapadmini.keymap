@@ -64,7 +64,7 @@
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 1 2>,
             <&zip_temp_layer 1 300>;
-};
+    };
 
     highspeedmode {
         layers = <6>;
@@ -72,7 +72,7 @@
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 2 1>,
             <&zip_temp_layer 1 300>;
-};
+    };
 
     scroller {
         layers = <7>;
@@ -137,7 +137,7 @@
         };
     };
 
-keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         DEFAULT_LAYER {
@@ -147,7 +147,7 @@ keymap {
 &lt 7 E          &kp I             &kp A  &kp O        &kp K
 &lt 6 Y          &mt LEFT_SHIFT H  &kp M  &kp N        &lt 4 SPACE
 &lt 7 LS(SLASH)  &lt 8 MINUS              &lt 2 ENTER  &lt 3 BACKSPACE
->;
+            >;
         };
 
         layer_1 {
@@ -156,7 +156,7 @@ keymap {
 &trans    &trans    &trans  &trans  &trans
 &trans    &trans    &trans  &trans  &trans
 &mkp MB2  &mkp MB1          &trans  &trans
->;
+            >;
         };
 
         layer_2 {
@@ -165,7 +165,7 @@ keymap {
 &kp PERIOD        &kp L             &kp D      &kp J   &kp G
 &kp Z             &kp X             &kp C      &kp V   &kp B
 &kp LS(NUMBER_1)  &kp LEFT_CONTROL             &trans  &mt LEFT_SHIFT DEL
->;
+            >;
         };
 
         layer_3 {
@@ -174,7 +174,7 @@ keymap {
 &kp JP_PLUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
 &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_ASTERISK
 &kp N0       &kp PERIOD                  &trans        &trans
->;
+            >;
         };
 
         layer_4 {
@@ -183,7 +183,7 @@ keymap {
 &kp LEFT_ALT    &kp F4  &kp F5  &kp F6   &kp F11
 &kp RCTRL       &kp F1  &kp F2  &kp F3   &trans
 &trans          &trans          &kp F10  &trans
->;
+            >;
         };
 
         layer_5 {
@@ -192,7 +192,7 @@ keymap {
 &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans
->;
+            >;
         };
 
         layer_6 {
@@ -201,16 +201,16 @@ keymap {
 &trans  &trans        &trans   &trans  &trans
 &trans  &kp LEFT_ALT  &kp TAB  &trans  &trans
 &trans  &trans                 &trans  &trans
->;
+            >;
         };
 
         layer_7 {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans        &trans        &kp JP_EISU   &kp JP_KANA   &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans
-&trans        &trans                      &trans        &trans
->;
+&trans        &trans        &mkp MB5      &trans        &trans
+&trans        &mkp MB4                    &trans        &trans
+            >;
         };
 
         layer_8 {
@@ -219,7 +219,7 @@ keymap {
 &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans
->;
+            >;
         };
     };
 };
