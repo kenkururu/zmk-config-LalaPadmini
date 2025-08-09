@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <mouse-gesture.dtsi>
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 1 380>; };
 
@@ -35,6 +36,63 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define JP_DOLLAR       DOLLAR             // $
+
+&zip_mouse_gesture {
+    stroke-size = <150>;
+    enable-eager-mode;
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
+
+    app_switcher {
+        pattern = <GESTURE_DOWN GESTURE_UP>;
+        bindings = <&kp LG(TAB)>;
+    };
+
+    virtual_desktop_prev {
+        pattern = <GESTURE_LEFT GESTURE_DOWN>;
+        bindings = <&kp LG(LC(LEFT))>;
+    };
+
+    virtual_desktop_next {
+        pattern = <GESTURE_RIGHT GESTURE_DOWN>;
+        bindings = <&kp LG(LC(RIGHT))>;
+    };
+
+    // left {
+    //     gesture = <GESTURE_LEFT>;
+    //     bindings = <&kp LEFT>;
+    // };
+    // right {
+    //     gesture = <GESTURE_RIGHT>;
+    //     bindings = <&kp RIGHT>;
+    // };
+    // up {
+    //     gesture = <GESTURE_UP>;
+    //     bindings = <&kp UP>;
+    // };
+    // down {
+    //     gesture = <GESTURE_DOWN>;
+    //     bindings = <&kp DOWN>;
+    // };
+};
 
 &mt {
     quick-tap-ms = <300>;
